@@ -1,0 +1,8 @@
+<view class="container">
+    <image class="user-avatar" src="/images/avatar/4.png"></image>
+    <text class="user-name">Hello，七月</text>
+    <view class="moto-container">
+        <!--bind事件绑定不会阻止冒泡事件向上冒泡，catch事件绑定可以阻止冒泡事件向上冒泡-->
+        <text class="moto" catchtap="go">开启小程序之旅</text>
+    </view>
+</view>

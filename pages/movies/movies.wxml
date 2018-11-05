@@ -1,0 +1,24 @@
+<import src="./movie-list/movie-list"></import>
+<view>
+    <view class="search">
+        <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+        <input type="text"
+               placeholder="血战钢锯岭、你的名字"
+               placeholder-class="placeholder"/>
+        <image src="/images/icon/xx.png" class="xx-img"></image>
+    </view>
+    <view class="container">
+        <view class="movies-template">
+            <template is="movieList"></template>
+        </view>
+        <view class="movies-template">
+            <template is="movieList"></template>
+        </view>
+        <view class="movies-template">
+            <template is="movieList"></template>
+        </view>
+    </view>
+    <view class="search-panel">
+        <template is="movieGridTemplate"></template>
+    </view>
+</view>

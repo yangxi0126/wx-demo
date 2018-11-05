@@ -1,0 +1,24 @@
+<import src="./template/post-item-template"></import>
+<view class="main-container">
+    <!--scroll-view必须要给高度-->
+    <scroll-view scroll-y="true" bindscrolltolower="scrollLowEvt">
+        <!--轮播-->
+        <swiper class="swiper-container"
+                indicator-dots="true"
+                autoplay="true"
+                interval="3000"
+                circular="true">
+            <block wx:for="{{bannerArr}}" wx:key="{{index}}">
+                <swiper-item class="item">
+                    <image src="{{item}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+        <!--内容-->
+        <block wx:for="{{list}}" wx:key="{{index}}">
+            <view catchtap="go" data-item="{{item}}">
+                <template is="post-item" data="{{...item}}"></template>
+            </view>
+        </block>
+    </scroll-view>
+</view>

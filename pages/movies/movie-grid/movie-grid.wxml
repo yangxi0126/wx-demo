@@ -1,0 +1,8 @@
+<import src="../stars/star"></import>
+<template name="movieGrid">
+    <view class="movie-container">
+        <image class="movie-img" src="/images/music/xuwei.jpg"></image>
+        <text class="movie-title">this is text</text>
+        <template is="star"></template>
+    </view>
+</template>
